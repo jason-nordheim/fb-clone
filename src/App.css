@@ -1,0 +1,13 @@
+:root {
+  --light-gray:  #eff2f5;
+  --fb-blue: #2e81f4; 
+}
+
+.app {
+  background-color: var(--light-gray);
+  height: 100vh;
+}
+
+.app__body {
+  display: flex;
+}
