@@ -1,5 +1,4 @@
 :root {
-  --light-white: #eff2f5;
   --light-gray:  #eff2f5; 
 }
 
@@ -15,7 +14,7 @@
 
 .messageSender__top {
   display: flex;
-  border-bottom: 1px solid var(--light-white);
+  border-bottom: 1px solid var(--light-gray);
   padding: 15px;
 }
 
@@ -29,7 +28,7 @@
   border: none;
   padding: 5px 20px; 
   border-radius: 999px;
-  background-color: var(--light-white);
+  background-color: var(--light-gray);
 }
 .messageSender__top > form > button {
   display: none;
