@@ -6,8 +6,11 @@
 .app {
   background-color: var(--light-gray);
   height: 100vh;
+  overflow: scroll;
 }
 
 .app__body {
   display: flex;
+  flex: 1;
+  overflow: scroll;
 }
