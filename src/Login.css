@@ -1,0 +1,44 @@
+:root {
+  --light-white:  #eff2f5;
+  --fb-blue: #2e81f4; 
+}
+
+.login {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.login > button {
+  width: 300px;
+  background-color: var(--fb-blue);
+  color: var(--light-white);
+}
+
+.login > button:hover {
+  background-color: var(--light-white);
+  color: var(--fb-blue);
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: 1px 5px 8px -9px rgba(0,0,0,0.75);
+}
+
+.login > div > img, .login > div > h3 {
+  object-fit: contain;
+  text-align: center;
+  height: 150px;
+}
+
+.login > div > h3 {
+  margin-top: 30px;
+}
+
+.login > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__logo > h3 {
+  color: var(--fb-blue); 
+  font-size: large;
+}
+
