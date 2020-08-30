@@ -22,14 +22,15 @@
   box-shadow: 1px 5px 8px -9px rgba(0,0,0,0.75);
 }
 
-.login > div > img, .login > div > h3 {
+.login > div > img, .login > div > h2{
   object-fit: contain;
   text-align: center;
   height: 150px;
 }
 
-.login > div > h3 {
+.login > div > h2 {
   margin-top: 30px;
+  color: var(--fb-blue); 
 }
 
 .login > div {
@@ -37,8 +38,4 @@
   flex-direction: column;
 }
 
-.login__logo > h3 {
-  color: var(--fb-blue); 
-  font-size: large;
-}
 
