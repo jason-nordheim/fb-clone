@@ -8,8 +8,14 @@ import db from './firebase'
 function Feed() {
   const [posts, setPosts] = useState([])
 
+  /**
+   * Firebase snapshot will listen for changes and re-refresh data 
+   * if new objects are pushed to the associated collection 
+   */
   useEffect(() => {
-    db.collection('posts').onSnapshot(snapshot => {
+    db.collection('posts')
+      .orderBy('timestamp', 'desc')
+      .onSnapshot(snapshot => {
       setPosts(snapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() })))
     })
   }, [])
