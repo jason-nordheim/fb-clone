@@ -20,7 +20,7 @@ function Post({profilePic, image, username, timestamp, message}) {
       </div>
       <div className="post__bottom">{message}</div>
       <div className="post__image">
-        <image src={image} alt={`Image from ${username}`} />
+        <img src={image} alt={`Image from ${username}`} />
       </div>
       <div className="post__options">
         <div className="post__option">
