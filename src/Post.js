@@ -8,13 +8,14 @@ import NearMeIcon from '@material-ui/icons/NearMe'
 import ExpandMoreOutlined from '@material-ui/icons/ExpandMoreOutlined'
 
 function Post({profilePic, image, username, timestamp, message}) {
+  console.log({ profilePic, image, username, timestamp, message });
   return (
     <div className="post">
       <div className="post__top">
         <Avatar className="post__avatar" src={profilePic} />
         <div className="post__topInfo">
           <h3>{username}</h3>
-          <p>{timestamp}</p>
+          <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
         </div>
       </div>
       <div className="post__bottom">{message}</div>
