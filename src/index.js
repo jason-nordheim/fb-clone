@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
+// application 
 import App from './App';
-import * as serviceWorker from './config/serviceWorker';
-import { StateProvider } from './context/StateProvider'
-import reducer, { initialState } from './reducers/reducer'
+
+// context 
+import { AppProvider } from './context/AppProvider'
+import reducer from './reducers/reducer'
+import { initialState } from "./reducers/initialState"
 
 ReactDOM.render(
   <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}>
+    <AppProvider initialState={initialState} reducer={reducer}>
       <App />
-    </StateProvider>
+    </AppProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
