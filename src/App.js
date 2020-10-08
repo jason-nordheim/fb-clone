@@ -7,8 +7,12 @@ import Widgets from './Widgets'
 import Login from './Login'
 import { useStateValue } from './StateProvider'
 
+/**
+ * Root Component 
+ */
 function App() {
-  const [{user}, dispatch] = useStateValue(); 
+  /** grab the user from global context, no user = no content */
+  const [{user}] = useStateValue(); 
 
   return (
     <div className="app">
