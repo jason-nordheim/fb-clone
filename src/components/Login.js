@@ -1,9 +1,9 @@
 import React from 'react'
 import './Login.css'
 import { Button } from '@material-ui/core'
-import { auth, provider } from './firebase'
-import { useStateValue } from './StateProvider'
-import { actionTypes } from './reducer'
+import { auth, provider } from '../config/firebase'
+import { useStateValue } from "../context/useStateValue";
+import { actionTypes } from '../reducers/reducer'
 
 function Login() {
   const [state, dispatch] = useStateValue(); 

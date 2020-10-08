@@ -7,7 +7,7 @@ import StoreFrontIcon from '@material-ui/icons/Storefront'
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary'
 import ExpandMoreOutlined from "@material-ui/icons/ExpandMoreOutlined";
 import './Sidebar.css'
-import { useStateValue } from './StateProvider'
+import { useStateValue } from '../context/useStateValue'
 
 function Sidebar() {
   const [{user}, dispatch] = useStateValue() 

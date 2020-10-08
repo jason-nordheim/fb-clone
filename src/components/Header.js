@@ -11,7 +11,7 @@ import ForumIcon from '@material-ui/icons/Forum'
 import NotificationActiveIcon from '@material-ui/icons/NotificationsActive'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { Avatar, IconButton } from '@material-ui/core'
-import { useStateValue } from './StateProvider'
+import { useStateValue } from '../context/useStateValue'
 
 /**
  * Header Component 
