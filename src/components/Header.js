@@ -11,14 +11,14 @@ import ForumIcon from '@material-ui/icons/Forum'
 import NotificationActiveIcon from '@material-ui/icons/NotificationsActive'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { Avatar, IconButton } from '@material-ui/core'
-import { useStateValue } from '../context/useStateValue'
+import { useAppContext } from '../context/useAppContext'
 
 /**
  * Header Component 
  * 
  */
 function Header() {
-  const [{user}, dispatch] = useStateValue()
+  const [{user}, dispatch] = useAppContext()
 
   return (
     <div className="header">

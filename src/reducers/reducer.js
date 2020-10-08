@@ -1,10 +1,4 @@
-export const initialState = {
-  user: null
-}
-
-export const actionTypes = {
-  SET_USER:'SET_USER'
-}
+import { actionTypes } from './actionTypes'
 
 export const reducer = (state, action) => {
   switch(action.type){

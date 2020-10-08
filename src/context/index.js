@@ -1,10 +1,10 @@
-import StateContext from './StateContext'
-import StateProvider from './StateProvider'
-import useStateValue from './useStateValue'
+import AppContext from './AppContext'
+import AppProvider from './AppProvider'
+import useAppContext from './useAppContext'
 
 
 module.exports = {
-  StateContext, 
-  StateProvider,
-  useStateValue
+  StateContext: AppContext, 
+  StateProvider: AppProvider,
+  useStateValue: useAppContext
 }

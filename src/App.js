@@ -5,14 +5,14 @@ import Sidebar from './components/Sidebar'
 import Feed from './components/Feed'
 import Widgets from './components/Widgets'
 import Login from './components/Login'
-import { useStateValue } from "./context/useStateValue"
+import { useAppContext } from "./context/useAppContext"
 
 /**
  * Root Component 
  */
 function App() {
   /** grab the user from global context, no user = no content */
-  const [{user}] = useStateValue(); 
+  const [{user}] = useAppContext(); 
 
   return (
     <div className="app">

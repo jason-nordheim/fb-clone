@@ -7,10 +7,11 @@ import StoreFrontIcon from '@material-ui/icons/Storefront'
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary'
 import ExpandMoreOutlined from "@material-ui/icons/ExpandMoreOutlined";
 import './Sidebar.css'
-import { useStateValue } from '../context/useStateValue'
+import { useAppContext } from '../context/useAppContext'
 
 function Sidebar() {
-  const [{user}, dispatch] = useStateValue() 
+  /* don't need the dispatch function of context */
+  const [{user}] = useAppContext() 
   return (
     <div className="sidebar">
       <SidebarRow src={user.photoURL} title={user.displayName} />

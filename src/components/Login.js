@@ -2,11 +2,11 @@ import React from 'react'
 import './Login.css'
 import { Button } from '@material-ui/core'
 import { auth, provider } from '../config/firebase'
-import { useStateValue } from "../context/useStateValue";
-import { actionTypes } from '../reducers/reducer'
+import { useAppContext } from "../context/useAppContext";
+import { actionTypes } from "../reducers/actionTypes"
 
 function Login() {
-  const [state, dispatch] = useStateValue(); 
+  const [, dispatch] = useAppContext(); 
 
   function signIn(e){
     e.preventDefault() 
